@@ -50,4 +50,24 @@ I_{sharp} = I + k (I - I_{blur})
 - `conv2` **flips** the kernel.  
 - `imfilter(...,'conv')` performs the same flipped operation.  
 The difference is numerically near zero.
+Max difference (conv2 vs imfilter with conv): ~0
 
+
+![Correlation vs Convolution](Figures/section5_conv_vs_corr.png)
+
+---
+
+## 6️⃣ Boundary Handling
+Comparing how different padding modes affect image borders:
+- **replicate:** extend edges outward.
+- **symmetric:** mirror the image.
+- **circular:** wrap around.
+
+![Boundary Handling](Figures/section6_boundary.png)
+
+---
+
+## 7️⃣ Reflections
+1. **Gaussian vs Box:** Gaussian provides smoother results and fewer ringing artifacts.  
+2. **Separable filters:** Reduce computational cost from O(N²) to O(2N).  
+3. **Boundary modes:** Influence how edges/corners are treated during filtering.
