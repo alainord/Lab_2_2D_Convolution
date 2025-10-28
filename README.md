@@ -53,7 +53,7 @@ The difference is numerically near zero.
 Max difference (conv2 vs imfilter with conv): ~0
 
 
-![Correlation vs Convolution](Figures/section5_conv_vs_corr.png)
+![Correlation vs Convolution](Figures/Figure_5.png)
 
 ---
 
@@ -62,9 +62,6 @@ Comparing how different padding modes affect image borders:
 - **replicate:** extend edges outward.
 - **symmetric:** mirror the image.
 - **circular:** wrap around.
-
-![Boundary Handling](Figures/section6_boundary.png)
-
 ---
 
 ## 7️⃣ Reflections
